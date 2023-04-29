@@ -8,48 +8,48 @@ public static void main(String[] args) {
 
 Scanner scanner = new Scanner(System.in);
         System.out.println("************************************");
-        String islemler = "1. Toplama İşlemi\n"
-                          +"2. Çıkarma İşlemi\n"
-                          +"3. Çarpma İşlemi\n"
-                          +"4. Bölme İşlemi";
+        String islemler = "1. 더하기\n"
+                          +"2. 빼기\n"
+                          +"3. 곱하기\n"
+                          +"4. 나누기";
         System.out.println(islemler);
         System.out.println("************************************");
-        System.out.println("İşlemi Seçiniz:");
+        System.out.println("연산할 방식 선택:");
         String islem = scanner.nextLine();
         int a;
         int b;
         
         switch(islem){
             case "1":
-                System.out.print("Birinci Sayı: ");
+                System.out.print("첫번째 수: ");
                 a = scanner.nextInt();
-                System.out.print("İkinci Sayı: ");
+                System.out.print("두번째 수: ");
                 b = scanner.nextInt();
-                System.out.println("Girilen Değerlerin Toplamları : " + (a+b));
+                System.out.println("계산 결과 : " + (a+b));
                 break;
             case "2":
-                System.out.print("Birinci Sayı: ");
+                System.out.print("첫번째 수: ");
                 a = scanner.nextInt();
-                System.out.print("İkinci Sayı: ");
+                System.out.print("두번째 수: ");
                 b = scanner.nextInt();
-                System.out.println("Girilen Değerlerin Farkları : " + (a-b));
+                System.out.println("계산 결과 : " + (a-b));
                 break;
             case "3":
-                System.out.print("Birinci Sayı: ");
+                System.out.print("첫번째 수: ");
                 a = scanner.nextInt();
-                System.out.print("İkinci Sayı: ");
+                System.out.print("두번째 수: ");
                 b = scanner.nextInt();
-                System.out.println("Girilen Değerlerin Çarpımları : " + (a * b));
+                System.out.println("계산 결과 : " + (a * b));
                 break;
             case "4":
-                System.out.print("Birinci Sayı: ");
+                System.out.print("첫번째 수: ");
                 a = scanner.nextInt();
-                System.out.print("İkinci Sayı: ");
+                System.out.print("두번째 수: ");
                 b = scanner.nextInt();
-                System.out.println("Girilen Değerlerin Bölümü : " + ((double)a / b));
+                System.out.println("계산 결과 : " + ((double)a / b));
                 break;
             default:
-                System.out.println("Geçersiz İşlem");
+                System.out.println("잘못 선택하셨습니다 프로그램을 종료합니다");
             }
         
         }
