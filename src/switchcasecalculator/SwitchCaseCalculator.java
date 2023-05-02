@@ -2,8 +2,16 @@ package switchcasecalculator;
 import java.util.Scanner;
 
 
+
+
+
+
+
+
+
 public class SwitchCaseCalculator {
 public static void main(String[] args) {
+	
 
 
 Scanner scanner = new Scanner(System.in);
@@ -51,6 +59,8 @@ Scanner scanner = new Scanner(System.in);
             default:
                 System.out.println("잘못 선택하셨습니다 프로그램을 종료합니다");
             }
+        
+        
         
         }
     
