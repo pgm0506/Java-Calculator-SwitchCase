@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class SwitchCaseCalculator {
 public static void main(String[] args) {
-	
+	KeyPad f = new KeyPad();
 
 
 Scanner scanner = new Scanner(System.in);
