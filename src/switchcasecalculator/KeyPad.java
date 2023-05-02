@@ -13,16 +13,13 @@ import javax.swing.JTextField;
 
 // 소스만 입력하고 Ctrl+Shift+O를 누른다. 
 public class KeyPad extends JFrame implements ActionListener {
-	private JTextField txt;
 	private JPanel panel1;
-	private JPanel panel2;
 	private String temp = "";
 
 	public KeyPad() {
 		
 		panel1 = new JPanel();
 		panel1.setLayout(new GridLayout(3, 3));
-		String operator[] = {"+","-","*","/","="};
 		add(panel1, BorderLayout.CENTER);
 		for (int i = 1; i <= 9; i++) {
 			JButton btn = new JButton("" + i);
